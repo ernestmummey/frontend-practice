@@ -1,0 +1,66 @@
+/* Widths
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root{
+
+    /* Fonts */
+    --ff-primary: "Outfit", sans-serif;
+    --ff-accent: "Young Serif", serif;
+
+    /* Font Weights */
+    --fw-sari-normal: 400;
+
+    --fw-sans-normal: 400;
+    --fw-sans-medium: 600;
+    --fw-sans-bold: 700;
+
+    /* Font Size */     /* 1rem = 16px */
+    --fs-400: 1rem; 
+
+    /* Primary Colors */
+    --clr-prime: hsl(14, 45%, 36%);          /* Nutmeg */
+    --clr-prime-accent: hsl(332, 51%, 32%);  /* Dark Raspberry */
+
+    /* Neutral Colors */
+    --clr-neutral-900: hsl(24, 5%, 18%);      /* Dark Charcoal */      
+    --clr-neutral-700: hsl(30, 10%, 34%);     /* Wenge Brown */
+    --clr-neutral-400: hsl(30, 18%, 87%);     /* Light Grey */
+    --clr-neutral-300: hsl(30, 54%, 90%);     /* Eggshell */
+    --clr-neutral-200: hsl(330, 100%, 98%);   /* Rose White */
+    --clr-neutral-100: hsl(0, 0%, 100%);      /* White */
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-family: var(--ff-sans);
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
