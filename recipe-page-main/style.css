@@ -52,6 +52,16 @@ html {
     font-family: var(--ff-sans);
 }
 
+main {
+    max-width: 1440px;
+    background-color: var(--clr-neutral-300);
+}
+
+.wrapper {
+    max-width: 50%;
+    margin: auto;
+}
+
 
 
 
