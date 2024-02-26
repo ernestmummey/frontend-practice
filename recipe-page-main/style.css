@@ -2,6 +2,11 @@
 - Mobile: 375px
 - Desktop: 1440px */
 
+
+/* ===============
+    Global Variables 
+================== */
+
 :root{
 
     /* Fonts */
@@ -9,9 +14,9 @@
     --ff-accent: "Young Serif", serif;
 
     /* Font Weights */
-    --fw-sari-normal: 400;
+    --fw-sarif-normal: 400;  /* young serif */
 
-    --fw-sans-normal: 400;
+    --fw-sans-normal: 400;  /* outfit */
     --fw-sans-medium: 600;
     --fw-sans-bold: 700;
 
@@ -32,6 +37,10 @@
 
 }
 
+/* ===============
+    CSS Reset
+================== */
+
 *,
 *::before,
 *::after {
@@ -43,23 +52,90 @@
     padding: 0;
 }
 
+/* ===============
+    Global  Styles
+================== */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-sans-normal);
+    color: var(--clr-neutral-900);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
 img {
     max-width: 100%;
     display: block;
+    border-radius: .8rem;
 }
 
-html {
-    font-family: var(--ff-sans);
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
 }
+
+/* ===============
+    Layouts  
+================== */
 
 main {
-    max-width: 1440px;
+    min-width: 1440px;
     background-color: var(--clr-neutral-300);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding-top: 123px; placeholder for alignment delete */
 }
 
 .wrapper {
-    max-width: 50%;
-    margin: auto;
+    max-width: 735px;
+    background-color: var(--clr-neutral-100);
+    border-radius: 1.4rem;
+    margin: 7.6rem 0;
+    padding: 1.6rem 2.5rem 0;
+}
+
+.grid_layout {
+
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
+}
+
+
+.intro_image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 1rem;
+    /* margin-bottom: 1.8rem; */
+}
+
+.intro_description {
+    padding-top: 1.95rem;
+}
+
+h1 {
+    font-family: var(--ff-accent);
+    font-weight: var(--fw-sarif-normal);
+    font-size: 2.5em;
+
+}
+
+.recipe_overview {
+    padding-top: .8rem;
+}
+
+
+
+.prep_title{
+    color: var(--clr-prime-accent);
 }
 
 
@@ -67,8 +143,14 @@ main {
 
 
 
+
+
+/* ===============
+    Frontend Mentor Attribution 
+================== */
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 
 .attribution a { 
