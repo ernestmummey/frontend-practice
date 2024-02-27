@@ -105,7 +105,7 @@ main {
 
     display: grid;
     grid-auto-flow: row;
-    gap: 1em;
+    gap: 2em;
 }
 
 
@@ -132,10 +132,30 @@ h1 {
     padding-top: .8rem;
 }
 
-
+.prep {
+    background-color: var(--clr-neutral-200);
+    padding: 1.4rem 1.7rem;
+}
 
 .prep_title{
+    font-weight: var(--fw-sans-medium);
+    font-size: 1.25em;
     color: var(--clr-prime-accent);
+    
+}
+
+.prep_time {
+    padding: .6rem 1.5rem;
+}
+
+.prep_time li {
+    margin-bottom: .5rem; 
+    padding-left: 1rem;
+}
+
+.prep_time li::marker {
+    color: var(--clr-prime-accent);
+    font-size: .8rem;
 }
 
 
