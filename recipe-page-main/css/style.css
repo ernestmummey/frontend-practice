@@ -66,18 +66,34 @@ body {
     letter-spacing: 0;
     color: var(--clr-neutral-600);
     -webkit-font-smoothing: antialiased;
+    
 }
 
 img {
-    max-width: 100%;
     display: block;
-    margin-bottom: ;
+    border-radius: 12px;
+    width: 100%;
+}
+
+ul, ol {
+    display: grid;
+    grid-auto-flow: row;
+    gap: .5em;
+}
+
+li {
+    list-style-position: inside;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+hr {
+    height: 1px;
+    border-width: 0;
+    background-color: var(--clr-neutral-150);
+}
 /* ===============
     Global  Typography classes
 ================== */
@@ -94,6 +110,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 1.75rem;
     line-height: 100%;
     letter-spacing: 0;
+    color: var(--clr-prime-accent);
 }
 .text-preset-3 {
     font-family: var(--ff-primary);
@@ -101,6 +118,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
     line-height: 100%;
     letter-spacing: 0;
+    color: var(--clr-prime);
 }
 .text-preset-4-bold {
     font-family: var(--ff-primary);
@@ -133,37 +151,32 @@ main {
     display: grid;
     grid-auto-flow: row;
     gap: 2.5em;
+    padding: 2.5em;
+}
+.content {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2em;
 }
 
-.recipe_overview {
-    padding-top: .8rem;
-}
+/* ===================================================== */
 
 .prep {
-    background-color: var(--clr-neutral-200);
-    padding: 1.4rem 1.7rem;
+    background-color: var(--clr-neutral-50);
+    border-radius: 12px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1em;
 }
 
-.prep_title{
-    font-weight: var(--fw-sans-medium);
-    font-size: 1.25em;
-    color: var(--clr-prime-accent);
-    
+
+
+.gap-2 {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1.5em;
 }
 
-.prep_time {
-    padding: .6rem 1.5rem;
-}
-
-.prep_time li {
-    margin-bottom: .5rem; 
-    padding-left: 1rem;
-}
-
-.prep_time li::marker {
-    color: var(--clr-prime-accent);
-    font-size: .8rem;
-}
 
 
 
